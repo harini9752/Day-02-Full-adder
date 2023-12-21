@@ -1,0 +1,11 @@
+module FullAdder(
+    input Cin,
+    input x,
+    input y,
+    output Cout,
+    output Sum
+    );
+    
+    assign Sum = x^y;
+assign Cout = ((x ^ y) & Cin) | (x & y);
+endmodule
